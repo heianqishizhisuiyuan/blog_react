@@ -1,0 +1,101 @@
+.select{
+
+  position: relative;
+}
+.select-wrap{
+  display: inline-block;
+}
+.selectItem{
+  height: 100%;
+}
+.input-wrap{
+  border: 1px solid #d9d9d9;
+  height:28px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+.input-wrap:hover{
+  border:1px solid #8bc2ec;
+
+}
+.input{
+  outline: none;
+  border: none;
+  height:100%;
+  width: 100%;
+  text-indent: 10px;
+  font-size: 12px;
+}
+.input:hover{
+  border:none;
+  outline:none;
+}
+.input:focus{
+  border:none;
+  outline:none;
+}
+.lime{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.option{
+  background: #fff;
+  margin-top: 1px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+}
+.option-wrap {
+  border: 1px solid #d8d5d5;
+  overflow: auto;
+  max-height: 250px;
+}
+.option-wrap li{
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.option-wrap li:hover {
+  background: #ecf6fd;
+}
+.optionDrop{
+  max-height: 250px;
+  animation:  slide-down .5s ease-in;
+  -webkit-animation:  slide-down .5s ease-in;
+  transition: max-height .3s ease-in;
+  transform-origin: 50% 0;
+
+}
+.optionUp{
+  max-height: 0;
+  transition: max-height .3s ease-out;
+}
+@-webkit-keyframes slide-down{
+  0%{transform: scale(1,0);}
+  25%{transform: scale(1,1.2);}
+  50%{transform: scale(1,0.85);}
+  75%{transform: scale(1,1.05);}
+  100%{transform: scale(1,1);}
+
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+  background-color: #F5F5F5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: #fff ;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color:#dbdbdb;
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
