@@ -12,7 +12,7 @@ class Home extends React.Component {
 	constructor () {
 		super()
 		this.state={
-      limit: 5,
+			limit: 5
 		}
 	}
   componentWillMount(){

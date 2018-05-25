@@ -36,7 +36,7 @@ export default function request(url, options) {
     'Accept':'application/json',
     'Content-Type': 'application/json'
     },
-    credentials:'include'
+    credentials:'include' //携带cookie
   },options))
     .then(checkStatus)
     .then(parseJSON)

@@ -19,7 +19,6 @@ export default {
 	},
 
 	effects: {
-
     *getHomeData({payload},{call, put, select}) {
       let dataSouce=yield select(({home})=> {return home.homeData})
       const homeData = yield call(getHome,parse(payload))
@@ -40,7 +39,8 @@ export default {
 	reducers: {
     querySuccess(state,action) {
       return {...state, ...action.payload}
-    }
+    },
+
 	}
 
 
